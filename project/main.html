@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,11 +18,41 @@
         }
 
         body {
-            background-color: white;
-            color: black;
             display: flex;
             flex-direction: column;
             align-items: center;
+        }
+
+        hr {
+            border: 1px solid black;
+            width: 100%;
+            margin: 35px 0;
+        }
+
+        .title {
+            margin-top: 50px;
+        }
+
+        .introduce {
+            border: 1px solid black;
+            padding: 30px 40px 30px 40px;
+            /* 안쪽 여백 위오*/
+            margin: 20px 20px 40px 20px;
+            /* 바깥 여백 */
+        }
+
+        .makingforms {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            border: 1px solid black;
+            padding: 30px 40px 30px 40px;
+            margin: 20px 20px 40px 20px;
+            align-items: left;
+        }
+
+        .makingforms>button {
+            margin-left: auto;
         }
     </style>
 
@@ -149,13 +178,13 @@
 <body>
     <div class="title"> <!--제목.로고-->
         <h1> team dongtan logo </h1>
-        <h1> 프로젝트 </h1>
     </div>
 
     <hr> <!--구분선-->
 
     <div class="introduce"> <!--소개글---->
-        <p>우리는 양평팀 거꾸로하면 팀 평양(ㅋ) <br>
+        <p> 🧑‍💻 <br>
+            우리는 양평팀 거꾸로하면 팀 평양(ㅋ) <br>
             멋진 개발자가 되기 위해 둘이서 팀프로젝트를 진행할거야 !! 사랑해</p>
     </div>
 
@@ -173,6 +202,7 @@
             <option value="3">팀원</option>
             <option value="4">기요미담당</option>
         </select><br>
+ 
         <label for="email">이메일 : </label>
         <input type="email" name="email" placeholder="yangpyeong@naver.com" id="email"><br>
         <label for="content">소개글 : </label>
@@ -189,6 +219,7 @@
 
 
     <div class="card" style="width: 18rem;" id="card">
+    
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8cdmD0DZes48D3kd0zmxd7Tlkx2c24fVthg&s"
             class="card-img-top" alt="...">
         <div class="card-body">
