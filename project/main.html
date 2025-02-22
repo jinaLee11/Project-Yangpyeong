@@ -1,20 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>팀양평 프로젝트</title>
+    <script></script>
+    <style>
+        /* 폰트 */
+        @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Noto+Sans+KR:wght@100..900&display=swap');
+
+        * {
+            font-family: "Gowun Dodum", serif;
+        }
+
+        body {
+            background-color: white;
+            color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+    </style>
 </head>
+
 <body>
     <div class="title"> <!--제목.로고-->
-    <h1> 프로젝트 </h1>
+        <h1> team dongtan logo </h1>
     </div>
 
     <hr> <!--구분선-->
 
-    
+    <div class="introduce"> <!--소개글---->
+        <p>우리는 양평팀 거꾸로하면 팀 평양(ㅋ) <br>
+            멋진 개발자가 되기 위해 둘이서 팀프로젝트를 진행할거야 !! 사랑해</p>
+    </div>
+
+    <div class="makingforms"> <!--멤버카드 작성폼-->
+        <p>멤버 카드 작성 form</p>
+        <label for="name">이름 : </label>
+        <input type="text" name="name"><br>
+        <label for="age">나이 : </label>
+        <input type="text" name="age"><br>
+        <label for="position">직무 : </label>
+            <select id="position">
+                <option selected>선택</option>
+                <option value="1">팀장</option>
+                <option value="2">부팀장</option>
+                <option value="3">팀원</option>
+                <option value="4">기요미담당</option>
+            </select><br>
+        <label for="email">이메일 : </label>
+        <input type="email" name="email" placeholder="yangpyeong@naver.com"><br>
+        <label for="content">소개글 : </label>
+        <textarea name="content"></textarea><br>
+        <!-- 이미지 전송 (cmd + 링크 클릭)
+         https://velog.io/@94lfnv/input-%EC%82%AC%EC%9A%A9%ED%95%B4%EC%84%9C-%EC%9D%B4%EB%AF%B8%EC%A7%80-%ED%8C%8C%EC%9D%BC-%EB%B3%B4%EB%82%B4%EA%B8%B0-%EC%B4%9D-%EC%A0%95%EB%A6%AC
+         -->
+        <label for="img">이미지 : </label>
+        <input type="file" accept="image/*" name="img"><br>
+        <label for="password">비밀번호 : </label>
+        <input type="password" name="password"><br>
+        <button type="button">작성하기</button>
+    </div>
 
 
-    
+
+
 </body>
 </html>
